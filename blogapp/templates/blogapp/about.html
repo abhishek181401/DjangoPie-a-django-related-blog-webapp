@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %} DjangoPie | About {% endblock %}
+{% block content %}
+      <div class="container">
+        <div class="page-top">
+          <div class="top flex">
+            <div class="page-name">
+              <a href="https://murmuring-tundra-27912.herokuapp.com/" class="learn">
+                <span class="material-icons"> keyboard_return </span> Go back
+              </a>
+              <h1>About</h1>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="sp">
+      <div class="container">
+<p>
+  {%if  website_info.about %}
+  {{website_info.about}}
+  {% else %}
+  Not Available
+  {% endif%}
+</p>
+      </div>
+    </section>
+
+
+{% endblock %}
+
